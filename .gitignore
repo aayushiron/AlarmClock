@@ -5,7 +5,7 @@
 workspace/*
 /.metadata/
 .settings
-Release
-libraries
-Binaries
-Archives
+Release/
+libraries/
+Binaries/
+Archives/
