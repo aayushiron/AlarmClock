@@ -77,16 +77,19 @@ void handleButtonInputs() {
 	}
 
 	if (controls.isVolumeUpPressed()) {
+		// Go up lift if screen on song select or pause/play a song if on time
 		if (screen.getScreenState() == ScreenState::SOUND_SELECT) soundList.decrementHoveringIndex();
 		else player.increaseVolume();
 	}
 
 	if (controls.isVolumeDownPressed()) {
+		// Go down list if screen on song select or pause/play a song if on time
 		if (screen.getScreenState() == ScreenState::SOUND_SELECT) soundList.incrementHoveringIndex();
 		else player.decreaseVolume();
 	}
 
 	if (controls.isPlayPressed()) {
+		// Select a song if screen on song select or pause/play a song if on time
 		if (screen.getScreenState() == ScreenState::SOUND_SELECT) {
 			soundList.setSelectedIndex(soundList.getHoveringIndex());
 			player.updateSong(soundList.getNameAt(soundList.getSelectedIndex()));
@@ -103,6 +106,7 @@ void handleButtonInputs() {
 	}
 
 	if (controls.isTimeSwitchPressed()) {
+		// Switch to the correct state using the current screen state
 		switch (screen.getScreenState()) {
 		case ScreenState::ALARM_TIME_SWITCHING:
 			screen.changeScreenState(ScreenState::TIME);
@@ -118,6 +122,8 @@ void handleButtonInputs() {
 }
 
 void playAlarm() {
+	// Play a tone for 250 seconds and be silent for 250 seconds if
+	// alarm is ringing
 	if (clock.isAlarmRinging() && millis() % 500 < 250) tone(7, 1000);
 	else noTone(7);
 }
