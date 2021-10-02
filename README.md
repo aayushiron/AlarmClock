@@ -24,6 +24,13 @@ Mega 2560).
 6) In the Eclipse menu bar, navigate to `Arduino->Add a library to the selected project` and select all libraries in the dependencies list
 7) Connect your Arduino Mega 2560 to your computer, make sure the correct COM port is selected, and then click `Arduino->Run Sketch` in the Eclipse menu bar.
 
+## Circuit Diagrams
+All following wiring use the Arduino 5V pin, ground pin, and other pins labeled.
+
+### Button Wiring
+![](https://i.imgur.com/S1Khxm8.png)
+
+
 ## Credits
 * Bodmer for the TFT_HX8357 library
 * Mike Matera (mike-matera) for the ArduinoSTL library
