@@ -1,0 +1,7 @@
+.log
+**/bin/*
+**/target/*
+/log.txt
+workspace/*
+/.metadata/
+.settings
