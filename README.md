@@ -9,7 +9,7 @@ Mega 2560).
   * [ArduinoSTL](https://github.com/mike-matera/ArduinoSTL)
   * [ds3231](https://github.com/rodan/ds3231)
   * [SD Library](https://www.arduino.cc/en/Reference/SD)
-  * [SPI Library](https://www.arduino.cc/en/Reference/SPI}
+  * [SPI Library](https://www.arduino.cc/en/Reference/SPI)
   * [TFT_HX8357](https://github.com/Bodmer/TFT_HX8357)
   * [TMRpcm](https://github.com/TMRh20/TMRpcm)
   * [Wire Library](https://www.arduino.cc/en/Reference/Wire)
