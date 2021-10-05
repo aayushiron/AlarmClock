@@ -1,6 +1,9 @@
 # Arduino Alarm Clock
-Code for an alarm clock that can play music files stored on an SD card (designed for the Arduino 
-Mega 2560).
+A simple Alarm Clock that can be built using an Arduino Mega 2560. The alarm clock can also play music
+from an SD card. Currently can only be built using the Sloeber plugin for Eclipse. 
+
+<img src="https://i.imgur.com/m6BtNX1.jpg" width="600"/>
+<img src="https://i.imgur.com/iA8djf0.jpg" width="600"/>
 
 ## Dependencies
 * [Eclipse for C++](https://www.eclipse.org/downloads/packages/release/kepler/sr2/eclipse-ide-cc-developers)
